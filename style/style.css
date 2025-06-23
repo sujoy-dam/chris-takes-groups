@@ -1,0 +1,113 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(253, 247, 247);
+    gap: 20px;
+    position: relative;
+}
+
+.card-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 30%;
+    height: fit-content;
+    position: fixed;
+    right: 0;
+}
+.content-container{
+    width: 70%;
+    /* overflow-y: scroll; */
+}
+
+.btn-apply-now {
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: #cc630e;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-chat-us {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+.or {
+    text-align: center;
+    font-size: 18px;
+}
+.card-list{
+    width:500px;
+}
+
+.card .img {
+    margin-top: 20px;
+}
+
+.trip-highlights-slider-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.where-you-staying, .meet-your-guide, .wild-women-moment{
+display: flex;
+gap: 20px;
+}
+.where-you-staying img, .meet-your-guide img, .wild-women-moment img{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+.traveler-say-card-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.traveler-say-card{
+    padding: 15px;
+    background-color: white;
+    border-radius: 25px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    
+}
+.travelar-details{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    /* margin-top: 50px; */
+
+}
+.travelar-details img{
+width: 60px;
+height: 60px;
+border-radius: 20px;
+}
+/* .trip-highlights-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: auto;
+} */
