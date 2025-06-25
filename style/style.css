@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -6,18 +11,37 @@
     background-color: rgb(253, 247, 247);
     gap: 20px;
     position: relative;
+    border: 2px solid red;
 }
 
 .card-container {
     background-color: white;
     border-radius: 20px;
     padding: 30px;
-    width: 30%;
+    width: 90%;
     height: fit-content;
-    position: fixed;
-    right: 0;
+    position: sticky;
+    /* left: 0; */
+    border:2px solid red
 }
-.content-container{
+
+/* .card + *{
+   gap:20px 
+} */
+.travel-date {
+    margin: 20px 0;
+}
+.travel-date  p, .travel-cost p{
+    margin-top: 12px;
+    color: gray;
+}
+
+.or {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.content-container {
     width: 70%;
     /* overflow-y: scroll; */
 }
@@ -45,13 +69,19 @@
     text-align: center;
     font-size: 18px;
 }
-.card-list{
-    width:500px;
+
+.card-list {
+    width: 500px;
 }
 
 .card .img {
     margin-top: 20px;
 }
+
+/* trip ::highlight container */
+
+
+/* trip ::highlight slider  */
 
 .trip-highlights-slider-container {
     display: flex;
@@ -59,6 +89,17 @@
     gap: 15px;
     width: 100%;
     overflow: hidden;
+    margin: 20px 0;
+}
+
+.card-title {
+    margin-top: 12px;
+}
+
+.card-description {
+    margin-top: 12px;
+    font-size: 18px;
+    color: gray;
 }
 
 .card-item img {
@@ -67,47 +108,200 @@
     object-fit: cover;
     border-radius: 10px;
 }
-.where-you-staying, .meet-your-guide, .wild-women-moment{
-display: flex;
-gap: 20px;
+
+/* What,s included section  */
+.what-included-container,
+.not-included-container {
+    margin-bottom: 40px;
 }
-.where-you-staying img, .meet-your-guide img, .wild-women-moment img{
+
+.what-included-container>ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.what-included-container li,
+.not-included-container li {
+    font-size: 18px;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.what-included-container p {
+    font-size: 18px;
+}
+
+/* not included container  */
+.not-included-container ul {
+    list-style-type: none;
+}
+
+/* daily itinerary accordian section  */
+.daily-itinerary-container {
+    margin-bottom: 40px;
+}
+
+.accordian-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.question-answer {
+    background-color: white;
+    margin-top: 15px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-title {
+    /* margin: 1.4rem; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.up-icon {
+    display: none;
+}
+
+.answer {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    display: none;
+    margin-top: 20px;
+    color: gray;
+    /* border: 2px solid red; */
+}
+
+.show-text .answer {
+    display: block;
+}
+
+.show-text .up-icon {
+    display: inline;
+}
+
+.show-text .down-icon {
+    display: none;
+}
+
+.answer-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.answer-2 img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.where-you-staying-container,
+.meet-your-guide-container,
+.wild-women-moment-container {
+    margin-bottom: 40px;
+}
+
+.where-you-staying-container h1,
+.meet-your-guide-container h1,
+.wild-women-moment-container h1 {
+    margin-bottom: 20px;
+}
+
+.where-you-staying p,
+.meet-your-guide p,
+.wild-women-moment p {
+    font-size: 18px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.where-you-staying,
+.meet-your-guide,
+.wild-women-moment {
+    display: flex;
+    gap: 20px;
+}
+
+.where-you-staying img,
+.meet-your-guide img,
+.wild-women-moment img {
     width: 300px;
     height: 250px;
     border-radius: 20px;
 }
-.traveler-say-card-container{
+
+
+
+
+
+.traveler-say-card-container {
     display: flex;
     gap: 20px;
     width: 100%;
 }
-.traveler-say-card{
-    padding: 15px;
+
+.traveler-say-container h1 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    /* border: 2px solid red; */
+}
+
+.traveler-say-card {
+    padding: 20px;
     background-color: white;
     border-radius: 25px;
     min-width: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    
+
 }
-.travelar-details{
+
+.traveler-say-card p {
+    font-size: 18px;
+    color: gray;
+}
+
+.travelar-details {
     display: flex;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     /* margin-top: 50px; */
 
 }
-.travelar-details img{
-width: 60px;
-height: 60px;
-border-radius: 20px;
+
+.travelar-details img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
 }
-/* .trip-highlights-slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  overflow: hidden;
-  margin: auto;
-} */
+
+/* FAQ section  */
+.faq-container {
+    margin-top: 40px;
+}
